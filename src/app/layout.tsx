@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import Sidebar from "@/components/Sidebar/Sidebar";
+
 const mont = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,9 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(mont.className)}>
-        <Sidebar/>
-        {children}</body>
+      <body className={cn(mont.className)}>{children}</body>
     </html>
   );
 }
