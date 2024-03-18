@@ -1,6 +1,6 @@
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Image from "next/image";
-import { ProfileForm } from "./pages/Account/Profile";
+import { ProfileForm } from "./pages/account/profile";
 import { DocsSidebarNav } from "@/components/SideNavbar";
 import { Separator } from "@/components/ui/separator";
 
@@ -10,11 +10,11 @@ export default function Home() {
 const sidebarNavItems = [
   {
     title: "Profile",
-    // href: "/examples/forms",
+    href: "/acoount/profile",
   },
   {
     title: "Account",
-    // href: "/examples/forms/account",
+    href: "/appearance/account",
   },
   {
     title: "Appearance",
