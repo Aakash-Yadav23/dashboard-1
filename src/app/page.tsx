@@ -1,6 +1,6 @@
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Image from "next/image";
-import { ProfileForm } from "./pages/account/profile";
+import { Profile } from "./pages/account/profile";
 import { DocsSidebarNav } from "@/components/SideNavbar";
 import { Separator } from "@/components/ui/separator";
 
@@ -10,15 +10,15 @@ export default function Home() {
 const sidebarNavItems = [
   {
     title: "Profile",
-    href: "/acoount/profile",
+    href: "/profile",
   },
   {
     title: "Account",
-    href: "/appearance/account",
+    href: "/account",
   },
   {
     title: "Appearance",
-    // href: "/examples/forms/appearance",
+    href: "/appearance",
   },
   {
     title: "Notifications",
@@ -69,7 +69,7 @@ const sidebarNavItems = [
 
   </aside>
   <div className="flex-1 lg:max-w-2xl">
-       <ProfileForm />
+       <Profile />
     
   </div>
 </div>

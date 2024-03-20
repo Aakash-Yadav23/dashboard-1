@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator"
-import { ProfileForm } from "@/app/pages/account/Profile"
+import { Profile } from "@/app/pages/account/profile"
 
-export default function SettingsAccountPage() {
+export default function Account() {
   return (
     <div className="space-y-6">
       <div>
@@ -12,7 +12,7 @@ export default function SettingsAccountPage() {
         </p>
       </div>
       <Separator />
-      <ProfileForm />
+      <Profile />
     </div>
   )
 }

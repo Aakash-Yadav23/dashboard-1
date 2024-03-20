@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-// import { SidebarNavItem } from "types/nav"
+import { SidebarNavItem } from "@/components/types/nav"
 
 import { cn } from "@/lib/utils"
 
