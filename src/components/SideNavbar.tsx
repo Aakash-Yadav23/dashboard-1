@@ -5,12 +5,13 @@ import { usePathname } from "next/navigation"
 import { SidebarNavItem } from "@/components/types/nav"
 
 import { cn } from "@/lib/utils"
+import React from "react"
 
 export interface DocsSidebarNavProps {
   items: SidebarNavItem[]
 }
 
-export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
+export const DocsSidebarNav: React.FC<DocsSidebarNavItemsProps> = ({ items }) => {
   const pathname = usePathname()
 
   return items.length ? (
@@ -82,3 +83,4 @@ export function DocsSidebarNavItems({
     </div>
   ) : null
 }
+

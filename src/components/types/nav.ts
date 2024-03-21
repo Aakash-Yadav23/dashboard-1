@@ -10,9 +10,9 @@ export interface NavItem {
 }
 
 export interface NavItemWithChildren extends NavItem {
-  items: NavItemWithChildren[]
+  items?: NavItem[]
 }
 
-export interface MainNavItem extends NavItem {}
+export interface MainNavItem extends NavItem { }
 
-export interface SidebarNavItem extends NavItemWithChildren {}
+export interface SidebarNavItem extends NavItemWithChildren { }
