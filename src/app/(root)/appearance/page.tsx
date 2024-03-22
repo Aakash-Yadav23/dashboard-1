@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator"
-import { AppearanceForm } from "@/app/pages/appearance/appearance"
+import { AppearanceForm } from "./appearance"
 
 export default function SettingsAppearancePage() {
   return (

@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator"
-import { Profile } from "@/app/pages/account/profile"
+import { Profile } from "./profile"
 
 export default function Account() {
   return (
