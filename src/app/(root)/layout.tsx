@@ -37,14 +37,7 @@ export default function Layout({
         href: "/account",
       }]
     },
-    {
-      title: "Appearance",
-      href: "/appearance",
-      items: [{
-        title: "Appearance",
-        href: "/appearance",
-      }]
-    },
+ 
     {
       title: "Notifications",
       // href: "/examples/forms/notifications",
@@ -82,7 +75,6 @@ export default function Layout({
 
         </aside>
         <div className="flex-1 lg:max-w-2xl">
-          {/* <Profile /> */}
           {children}
         </div>
       </div>
