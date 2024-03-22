@@ -18,12 +18,14 @@ export const DocsSidebarNav: React.FC<DocsSidebarNavItemsProps> = ({ items }) =>
     <div className="w-full">
       {items.map((item, index) => (
         <div key={index} className={cn("pb-4")}>
-          <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-semibold">
-            {item.title}
-          </h4>
-          {item?.items?.length && (
+          <Link href={item?.href ? item.href : '#'}>
+            <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-semibold">
+              {item.title}
+            </h4>
+          </Link>
+          {/* {item?.items?.length && (
             <DocsSidebarNavItems items={item.items} pathname={pathname} />
-          )}
+          )} */}
         </div>
       ))}
     </div>
