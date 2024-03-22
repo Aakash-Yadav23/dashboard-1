@@ -1,7 +1,6 @@
 
 import { Separator } from '@/components/ui/separator';
 import React from 'react'
-import { Profile } from './account/profile';
 import { DocsSidebarNav } from '@/components/SideNavbar';
 
 
