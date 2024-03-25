@@ -1,64 +1,37 @@
-
-import { Separator } from '@/components/ui/separator';
-import React from 'react'
-import { DocsSidebarNav } from '@/components/SideNavbar';
-
+import { Separator } from "@/components/ui/separator";
+import React from "react";
+import { DocsSidebarNav } from "@/components/SideNavbar";
 
 export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   const sidebarNavItems = [
     {
       title: "Dashboard",
       href: "/",
-      items: [{
-        title: "Dashboard",
-        href: "/",
-      }]
-
     },
     {
       title: "Profile",
       href: "/profile",
-      items: [{
-        title: "Profile",
-        href: "/profile",
-      }]
-
     },
     {
       title: "Account",
       href: "/account",
-      items: [{
-        title: "Account",
-        href: "/account",
-      }]
     },
- 
+
     {
       title: "Notifications",
-      // href: "/examples/forms/notifications",
-      items: [{
-        title: "Notifications",
-        href: "/notifications",
-      }]
+      href: "/notifications",
     },
     {
       title: "Display",
-      // href: "/examples/forms/display",
-      items: [{
-        title: "Display",
-        href: "/display",
-      }]
+      href: "/display",
     },
-  ]
-
+  ];
 
   return (
-
     <div className="hidden space-y-6 p-10 pb-16 md:block">
       <div className="space-y-0.5">
         <h2 className="text-2xl font-bold tracking-tight">Settings</h2>
@@ -71,12 +44,8 @@ export default function Layout({
         <aside className="-mx-4 lg:w-1/5">
           {/* <Sidebar i  /> */}
           <DocsSidebarNav items={sidebarNavItems} pathname={null} />
-
-
         </aside>
-        <div className="flex-1 lg:max-w-2xl">
-          {children}
-        </div>
+        <div className="flex-1 lg:max-w-2xl">{children}</div>
       </div>
     </div>
   );
