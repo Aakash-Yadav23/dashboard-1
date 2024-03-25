@@ -25,20 +25,20 @@ export default function DashboardPage() {
   return (
     <>
       <div className="md:hidden">
-        <Image
+        {/* <Image
           src="/examples/dashboard-light.png"
           width={1280}
           height={866}
           alt="Dashboard"
           className="block dark:hidden"
-        />
-        <Image
+        /> */}
+        {/* <Image
           src="/examples/dashboard-dark.png"
           width={1280}
           height={866}
           alt="Dashboard"
           className="hidden dark:block"
-        />
+        /> */}
       </div>
       <div className="hidden flex-col md:flex">
         <div className="border-b">
