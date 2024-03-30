@@ -1,9 +1,17 @@
-import React from 'react'
+import { Separator } from "@/components/ui/separator"
+import { Notifications } from "@/app/(root)/notifications/Notification";
 
-const page = () => {
+export default function SettingsNotificationsPage() {
   return (
-    <div>Notifications</div>
+    <div className="space-y-6">
+      <div>
+        <h3 className="text-lg font-medium">Notifications</h3>
+        <p className="text-sm text-muted-foreground">
+          Configure how you receive notifications.
+        </p>
+      </div>
+      <Separator />
+      <Notifications />
+    </div>
   )
 }
-
-export default page

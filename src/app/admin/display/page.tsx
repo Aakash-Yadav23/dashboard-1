@@ -1,6 +1,5 @@
 import { Separator } from "@/components/ui/separator"
-import { DisplayForm } from "./display"
-
+import Display from "@/app/(root)/display/display"
 export default function SettingsDisplayPage() {
   return (
     <div className="space-y-6">
@@ -11,7 +10,7 @@ export default function SettingsDisplayPage() {
         </p>
       </div>
       <Separator />
-      <DisplayForm />
+      <Display />
     </div>
   )
 }
